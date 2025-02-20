@@ -37,6 +37,10 @@ async function displayData(input){
                         <img src="${weatherIcons[icon]}" alt="weather-icon" class="temperature-icon">
                         <p class="temperature-numeric">${temp} &deg;C</p> 
                     </div>
+                    <div class="stats-description">
+                        <div class="stat-conditions">${conditions}</div>
+                        <div class="stat-forecast">${description}</div>
+                    </div>
                     <div class="stats-details">
                         <div class="currentTime">Current Time: ${datetime}</div>
                         <div class="stat-realFeel">Feels like: ${feelslike} &deg;C</div>
@@ -44,10 +48,7 @@ async function displayData(input){
                         <div class="stat-wind-speed">Wind speed: ${windspeed} km/h</div>
                         <div class="stat-wind-gust">Wind gust: ${windgust} km/h</div>
                     </div>
-                      <div class="stats-description">
-                        <div class="stat-conditions">${conditions}</div>
-                        <div class="stat-forecast">${description}</div>
-                    </div>
+                      
                     `
 
 }

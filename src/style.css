@@ -45,7 +45,7 @@ header input:focus {
 
 main{
     height: calc(100vh - 100px);
-    background: #131319;
+    background-color: #131319;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -145,3 +145,39 @@ main{
     font-weight: 700;
 }
 
+@media (max-width:1500px) {
+    .weather-stats{
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+    }
+    .container{
+        height: 100%;
+    }
+}
+
+@media (max-width:1000px) {
+   .container{
+        width: 80%;
+   }
+}
+
+@media (max-width: 600px) {
+    .weather-name{
+        font-size: 2rem;
+    }
+
+    header input{
+        width: 80%;
+    }
+    main{
+        height: 100vh;
+        padding-bottom: 70px;
+
+    }
+    .container{
+        width: 95%;
+        margin-top: 50px;
+
+    }
+}
